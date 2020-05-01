@@ -131,13 +131,16 @@ contains(names, 'Colt', function(result){
 
 function uniq(arr, cb){
   let answer = []
-  for (i = 0; i < arr.length; i++){
-    if (arr.indexOf(arr[i]) == -1){
+  for (let i = 0; i < arr.length; i++){
+    if (arr.indexOf(arr[i]) === -1){
       answer.push(arr[i])
+        } else {
+        cb(answer)
+        }
+      
   }
   }
-  cb(answer)
-}
+
 
 // Do not edit the code below.
 uniq(names, function(uniqArr){
@@ -155,6 +158,9 @@ uniq(names, function(uniqArr){
 */
 
 //Code Here 
+function each(arr, cb){
+  
+}
 
 // Do not edit the code below.
 each(names, function(item, indice){
@@ -172,6 +178,8 @@ each(names, function(item, indice){
 */
 
 // Code here
+
+
 
 // Do not edit the code below.
 var users = [
